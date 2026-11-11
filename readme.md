@@ -26,7 +26,7 @@
 
 
 
-1. 环境：在macOS15.8.2和Squirrel1.1.2测试通过
+1. 环境：在macOS 15.8.2 和 Squirrel 1.1.2测试通过
 2. 确保您已经安装了 Rime 输入法
 3. 从 [GitHub Releases](https://github.com/swimminghao/rime_trans/releases) 下载最新版本
 4. 根据您的操作系统，按照以下步骤安装：
