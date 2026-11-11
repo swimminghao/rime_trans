@@ -13,8 +13,8 @@ local config = {
         },
         niutrans = "YOUR_NIUTRANS_API_KEY",
         youdao = {
-            app_id = "70e1565d9f8fe5f3",
-            app_key = "g7FdBf3K63jEMuSHBFPGSYzMd5JFR7dZ"
+            app_id = "YOUR_API_ID",
+            app_key = "YOUR_API_KEY"
         },
         baidu = {
             app_id = "YOUR_BAIDU_APP_ID",
