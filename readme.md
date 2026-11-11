@@ -26,7 +26,7 @@
 
 
 
-1. 环境：在macOS 11.7.11 和 Squirrel 0.16.2测试通过
+1. 环境：在macOS15.8.2和Squirrel1.1.2测试通过
 2. 确保您已经安装了 Rime 输入法
 3. 从 [GitHub Releases](https://github.com/swimminghao/rime_trans/releases) 下载最新版本
 4. 根据您的操作系统，按照以下步骤安装：
@@ -40,9 +40,9 @@
 ```
 engine:
   processors:
-    - lua_processor@*input_text_processor # 候选词翻译
+    - lua_processor@*input_text*processor # 候选词翻译
   filters:
-    - lua_filter@*input_text_filter   # 候选词翻译
+    - lua_filter@*input_text*filter   # 候选词翻译
 ```
 
 1. 重新部署 Rime 输入法
@@ -117,12 +117,7 @@ local config = {
 插件提供了完整的日志功能，可以帮助您排查问题：
 
 ```
-# 实时看，打字、按Ctrl+o的时候会刷Lua报错
-tail -f "$TMPDIR/rime.squirrel.INFO"
-# 只抓 ERROR 报错，过滤噪音
-tail -f "$TMPDIR/rime.squirrel.INFO" | grep -iE "error|E[0-9]|lua"
-# 看警告
-tail -f "$TMPDIR/rime.squirrel.WARNING"
+/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --quit && /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel
 ```
 
 如果翻译功能不工作，请检查以下几点：
