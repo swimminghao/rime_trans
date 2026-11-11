@@ -40,9 +40,9 @@
 ```
 engine:
   processors:
-    - lua_processor@*input_text*processor # 候选词翻译
+    - lua_processor@*input_text_processor # 候选词翻译
   filters:
-    - lua_filter@*input_text*filter   # 候选词翻译
+    - lua_filter@*input_text_filter   # 候选词翻译
 ```
 
 1. 重新部署 Rime 输入法
